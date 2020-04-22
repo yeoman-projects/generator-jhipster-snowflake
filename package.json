@@ -1,0 +1,60 @@
+{
+  "name": "generator-jhipster-snowflake",
+  "version": "0.0.2",
+  "description": "JHipster module to enable entity snowflake and snowflake log page",
+  "homepage": "https://github.com/magic-index/generator-jhipster-snowflake",
+  "author": {
+    "name": "snowfox",
+    "email": "snowfox1819@gmail.com",
+    "url": "https://github.com/little-snow-fox"
+  },
+  "files": [
+    "generators"
+  ],
+  "main": "generators/app/index.js",
+  "keywords": [
+    "yeoman-generator",
+    "jhipster-module",
+    "Jhipster",
+    "Snowflake",
+    "Entity",
+    "Entity Snowflake",
+    "Javers"
+  ],
+  "dependencies": {
+    "yeoman-generator": "4.5.0",
+    "yeoman-environment": "2.7.0",
+    "shelljs": "0.8.3",
+    "chalk": "3.0.0",
+    "glob": "7.1.6",
+    "lodash": "4.17.15",
+    "semver": "7.1.1",
+    "generator-jhipster": ">=6.0.0"
+  },
+  "devDependencies": {
+    "eslint": "6.8.0",
+    "eslint-config-airbnb-base": "14.0.0",
+    "eslint-plugin-import": "2.20.0",
+    "fs-extra": "8.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/magic-index/generator-jhipster-snowflake.git"
+  },
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/magic-index/generator-jhipster-snowflake/issues"
+  },
+  "engines": {
+    "node": ">=8.9.0",
+    "npm": ">=2.14.2"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "lint-fix": "eslint . --fix",
+    "release": "npm run lint && git push && git push --tags && npm publish",
+    "release:patch": "npm version patch -a -m \"Update to %s\" && npm run release",
+    "release:minor": "npm version minor -a -m \"Update to %s\" && npm run release",
+    "release:major": "npm version major -a -m \"Update to %s\" && npm run release"
+  }
+}
