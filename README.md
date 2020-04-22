@@ -1,6 +1,6 @@
 ## Usage
 
-Generate the code related to snowflake ID and convert the type of ID from Long to String.
+Generate the code related to snowflake ID and convert the type of ID from Long to String.  
 生成与雪花 ID 相关的代码，并将 ID 的类型从 Long 转换为 String。
 
 ### Installation
