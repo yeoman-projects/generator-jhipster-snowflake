@@ -61,6 +61,14 @@ const updateEntitySnowflake = function (entityName, entityData, javaDir, resourc
     },
     {
       path: `${javaDir}domain/${entityName}.java`,
+      from: `    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;`,
+      to: `    @Id
+    private String id;`,
+    },
+    {
+      path: `${javaDir}domain/${entityName}.java`,
       from: 'public Long getId(',
       to: 'public String getId('
     },
